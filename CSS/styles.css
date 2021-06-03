@@ -54,7 +54,7 @@ h3 {
   left: 200px;
   bottom: 350px;
   animation-name: animation;
-  animation-duration: 20s;
+  animation-duration: 18s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
 }
@@ -76,8 +76,9 @@ h3 {
   right: 250px;
   top: 50px;
   animation-name: animation1;
-  animation-duration: 20s;
+  animation-duration: 18s;
   animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes animation1 {
