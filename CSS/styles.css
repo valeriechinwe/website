@@ -195,12 +195,64 @@ p {
 
 /* media query for reponsiveness*/
 
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
   h1 {
-    font-size:3.0rem;
+    font-size: 2.5rem;
   }
 
   h2 {
     font-size: 1.0rem;
+  }
+
+  .fed {
+    width: 75%;
+  }
+
+  .top-container {
+    padding-bottom: 45px;
+  }
+
+  .bottom-cloud {
+    position: absolute;
+    left: 100px;
+    bottom: 150px;
+    animation-name: animation;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  @keyframes animation {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    100% {
+      left: 350px;
+      top: 250px;
+    }
+  }
+
+  .top-cloud {
+    position: absolute;
+    right: 100px;
+    top: 150px;
+    animation-name: animation1;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  @keyframes animation1 {
+    0% {
+      right: 0px;
+      top: 0px;
+    }
+
+    100% {
+      right: 350px;
+      top: 250px;
+    }
   }
 }
