@@ -190,3 +190,16 @@ p {
   text-decoration: none;
   border-style: none;
 }
+
+
+/* media query for reponsiveness*/
+
+@media (max-width: 600px) {
+  h1 {
+    font-size:3.0rem;
+  }
+
+  h2 {
+    font-size: 1.0rem;
+  }
+}
