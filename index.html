@@ -103,7 +103,13 @@
       <p class="copyright">© Handcrafted by Valerie Chinwe Korede. All Rights Reserved</p>
     </div>
 
-
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('active');
+});
+</script>
+    
 </body>
 
 </html>
