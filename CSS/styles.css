@@ -12,26 +12,32 @@ body {
   background-color: #66BFBF;
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center the items */
   align-items: center;
   padding: 10px 20px;
 }
 
 .nav-list {
   list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
+  display: flex; /* Keep items in a row */
+  padding: 0; 
+  margin: 0; 
 }
 
 .nav-list li {
-  margin: 0 15px;
+  margin: 0 15px; /* Space between items */
 }
 
 .nav-list li a {
   color: white;
   text-decoration: none;
   font-family: Montserrat;
+}
+
+.nav-container {
+  display: flex; /* Ensure it uses flexbox */
+  justify-content: center; /* Center the nav list */
+  width: 100%; /* Take full width */
 }
 
 .menu-toggle {
