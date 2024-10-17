@@ -5,6 +5,48 @@ body {
   color: #40514E;
 }
 
+/* Add styles for the navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #66BFBF;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-family: Montserrat;
+}
+
+.menu-toggle {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 3px auto;
+}
+
 h1 {
   margin: 40px auto 0 auto;
   font-family: 'Sacramento', cursive;
@@ -254,5 +296,28 @@ p {
       right: 350px;
       top: 250px;
     }
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .nav-list {
+    display: none; /* Hide menu by default */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%;
+    background-color: #66BFBF; /* Match navbar color */
+    position: absolute; /* Position it below navbar */
+    top: 60px; /* Adjust based on navbar height */
+    left: 0;
+    z-index: -1; /* Ensure it appears below other content */
+  }
+
+  .nav-list.active {
+    display: flex; /* Show menu when active */
+    z-index: 1000; /* Bring it above other content */
+  }
+
+  .menu-toggle {
+    display: flex; /* Show hamburger icon on small screens */
   }
 }
